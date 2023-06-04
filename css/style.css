@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans_7pt_Condensed-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans_7pt_Condensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans_7pt_Condensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    background-color: #FAFAFA;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.header {
+    height: 82px;
+    align-items: center;
+    margin-bottom: 42px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-reset {
+    background-color: transparent;
+    border: none;
+}
+
+.header__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.search-filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 480px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 48px;
+
+}
+
+.search-txt {
+    margin-left: 25px;
+    width: 100%;
+    border: none;
+}
+
+.search-icon {
+    color: hsl(0, 0%, 52%);
+}
+
+.filter-box {
+    position: relative;
+}
+.dropdown-toggle {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 480px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 48px;
+    border: none; /* Убираем границу */
+    outline: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 480px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .dropdown-content-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    z-index: 10;
+  }
+ 
+  .dropdown-content li {
+    margin-bottom: 10px;
+  }
+
+  .dropdown-content li:last-child {
+    margin-bottom: 0;
+  }
+
+  
+
+  .arrow-icon {
+    transition: transform 0.3s ease; /* Добавляем анимацию к свойству transform */
+  }
+  
+  .arrow-up {
+    transform: rotate(180deg); /* Поворачиваем иконку стрелки вверх */
+  }
+  
+
+  
+
+.country-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 76px;
+    row-gap: 64px;
+
+}
+
+.country-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
+    background: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.country-box:hover {
+    cursor: pointer;
+}
+
+.flag-pic {
+    display: flex;
+    max-width: 100%;
+    max-height: 160px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.country-title {
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.country-parametr {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 8px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.regular-text {
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .country-list {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 25px;
+    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .country-list {
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    .search-filter-container {
+        flex-direction: column;
+    }
+
+    .filter-box {
+        max-width: 200px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .country-list {
+        grid-template-columns: repeat(1, 265px);
+        justify-content: center;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/9797df2d10.js" crossorigin="anonymous"></script>
+    <title>REST Countries API</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <h1 class="header__title">Where in the world?</h1>
+                    <button class="header__screen-mode btn-reset"><i class="far fa-moon"></i> Dark mode</button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <i class="fa fa-search search-icon"></i>
+                    <input class="search-txt" type="text" placeholder="Search for a country..." />
+                </div>
+                <div class="filter-box">
+                    <button class="dropdown-toggle">Filter by Region&nbsp;<i class="arrow-icon">
+                            <img src="./images/icon-arrow-down.svg" alt="Icon">
+                        </i></button>
+                    <ul class="dropdown-content">
+                        <li data-region="World">All Countries</li>
+                        <li data-region="Africa">Africa</li>
+                        <li data-region="Americas">America</li>
+                        <li data-region="Asia">Asia</li>
+                        <li data-region="Europe">Europe</li>
+                        <li data-region="Oceania">Oceania</li>
+                    </ul>
+
+                </div>
+            </div>
+            <ul class="country-list">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

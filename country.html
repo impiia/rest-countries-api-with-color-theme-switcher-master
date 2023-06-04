@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/countryStyle.css">
+
+  <script src="https://kit.fontawesome.com/9797df2d10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <h1 class="header__title">Where in the world?</h1>
+          <button class="header__screen-mode btn-reset"><i class="far fa-moon"></i> Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <button class="back-btn"><i class="left-arrow-icon">
+            <img src="./images/arrow-left-long-solid copy.svg" alt="Icon">
+          </i>&nbsp; Back</button>
+
+        <div class="country-container">
+
+
+          <img class="country-flag" src="" alt="Flag">
+
+
+          <div class="section__info">
+
+            <h1 class="country-name"></h1>
+
+            <div class="country-col-first">
+              <div class="native-name">
+                <h2>Native Name:</h2>
+                <span class="native-name-value"></span>
+              </div>
+
+              <div class="population">
+                <h2>Population:</h2>
+                <span class="population-value"></span>
+              </div>
+
+              <div class="region">
+                <h2>Region:</h2>
+                <span class="region-value"></span>
+              </div>
+
+              <div class="subregion">
+                <h2>Subregion:</h2>
+                <span class="subregion-value"></span>
+              </div>
+
+              <div class="capital">
+                <h2>Capital:</h2>
+                <span class="capital-value"></span>
+              </div>
+
+            </div>
+
+            <div class="country-col-second">
+              <div class="country-domane">
+                <h2>Top Level Domain:</h2>
+                <span class="country-domane-value"></span>
+              </div>
+
+              <div class="country-currencies">
+                <h2>Currencies:</h2>
+                <span class="country-currencies-value"></span>
+              </div>
+
+              <div class="country-language">
+                <h2>Language:</h2>
+                <span class="country-language-value"></span>
+              </div>
+
+            </div>
+            <div class="border_countries">
+              <h2>Border Countries:</h2>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script src="country-script.js"></script>
+</body>
+
+</html>

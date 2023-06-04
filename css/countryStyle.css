@@ -1,0 +1,94 @@
+.header {
+    margin-bottom: 80px;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 136px;
+    height: 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+.country-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.country-container img {
+    width: 560px;
+    height: 400px;
+    margin-right: 118px;
+}
+
+.section__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: auto;
+}
+
+.country-name {
+    font-weight: 700;
+    font-size: 32px;
+    grid-column: span 2;
+    /* Элемент будет занимать 2 колонки в сетке */
+}
+
+.border_countries {
+    grid-column: span 2;
+    margin-top: 68px;
+
+}
+
+.border_countries h2 {
+    display: inline;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.border_country_btn {
+
+    width: auto;
+    height: 27px;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 14px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.native-name,
+.population,
+.region,
+.subregion,
+.capital,
+.country-domane,
+.country-currencies,
+.country-language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 16px;
+}
